@@ -1,4 +1,4 @@
-import type { ContextShape } from './types';
+export type ContextShape = Record<string, unknown>;
 
 export class Context<C extends ContextShape> {
   private store = new Map<string, unknown>();

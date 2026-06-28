@@ -1,17 +1,17 @@
 {
-  "name": "tsdown-starter",
+  "name": "tabi",
   "type": "module",
   "version": "0.0.0",
-  "description": "A starter for creating a TypeScript package.",
+  "description": "Type safe Testing Library",
   "author": "Author Name <author.name@mail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/author/library#readme",
+  "homepage": "https://github.com/kazeusagi/tabi#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
+    "url": "git+https://github.com/kazeusagi/tabi.git"
   },
   "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "https://github.com/kazeusagi/tabi/issues"
   },
   "exports": {
     ".": "./dist/index.mjs",

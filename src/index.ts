@@ -1,1 +1,1 @@
-export * from './tabiji';
+export * from './tabi';
