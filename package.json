@@ -38,11 +38,5 @@
     "tsdown": "^0.22.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.5"
-  },
-  "inlinedDependencies": {
-    "@vitest/pretty-format": "4.1.9",
-    "@vitest/runner": "4.1.9",
-    "@vitest/utils": "4.1.9",
-    "tinyrainbow": "3.1.0"
   }
 }

@@ -1,15 +1,15 @@
-import { tabiji } from '../dist/index.mjs';
+import * as vitest from 'vitest';
+import { Tabiji } from '../dist/index.mjs';
 
-// tabiji(vitest)
-//   .beforeEach(() => setup())
-//   .describe('計算', (t, { it, describe }) => {
-//     it('足し算', () => expect(1 + 1).toBe(2));
-//     it('引き算', () => expect(2 - 1).toBe(1));
+type MyEnv = { userId: number; userName: string };
 
-//   });
-
-tabiji()
+new Tabiji<MyEnv>(vitest)
   .beforeEach(() => {})
   .describe('aa', ({ it }) => {
     it('', () => {});
+    it('', () => {});
+  })
+  .myfn((c) => {
+    c.set('userId', 12);
+    console.log(c.get('userId'));
   });

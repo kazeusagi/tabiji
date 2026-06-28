@@ -1,12 +1,16 @@
-type TestFn = (name: string, fn: () => void) => void;
+import { Context } from './context';
+import type { ContextShape, DescribeHelpers, Runner } from './types';
 
-type DescribeHelpers = {
-  it: TestFn;
-  test: TestFn;
-};
-type Context = {};
+export class Tabiji<C extends ContextShape> {
+  private context = new Context<C>();
 
-class Tabiji {
+  constructor(runner: Runner) {}
+
+  myfn(handler: (c: Context<C>) => void): this {
+    handler(this.context);
+    return this;
+  }
+
   beforeEach(fn: () => void): this {
     return this;
   }
@@ -30,8 +34,4 @@ class Tabiji {
   }
 
   go(): void {}
-}
-
-export function tabiji() {
-  return new Tabiji();
 }
