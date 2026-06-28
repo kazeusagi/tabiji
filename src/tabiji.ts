@@ -1,18 +1,13 @@
+type TestFn = (name: string, fn: () => void) => void;
+
+type DescribeHelpers = {
+  it: TestFn;
+  test: TestFn;
+};
+type Context = {};
+
 class Tabiji {
-  private stri = '';
-
-  constructor() {}
-
-  describe(): this {
-    return this;
-  }
-  test(): this {
-    return this;
-  }
-  it(): this {
-    return this;
-  }
-  beforeEach(): this {
+  beforeEach(fn: () => void): this {
     return this;
   }
   afterEach(): this {
@@ -24,6 +19,16 @@ class Tabiji {
   afterAll(): this {
     return this;
   }
+
+  describe(name: string, callback: (helpers: DescribeHelpers) => void): this {
+    const helpers: DescribeHelpers = {
+      it: (...args) => console.log(name, ...args),
+      test: (...args) => console.log(name, ...args),
+    };
+    callback(helpers);
+    return this;
+  }
+
   go(): void {}
 }
 
