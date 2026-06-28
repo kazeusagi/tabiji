@@ -1,9 +1,9 @@
 {
   "name": "tabi",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Type safe Testing Library",
-  "author": "Author Name <author.name@mail.com>",
+  "author": "kazeusagi",
   "license": "MIT",
   "homepage": "https://github.com/kazeusagi/tabi#readme",
   "repository": {
