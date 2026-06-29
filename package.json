@@ -5,13 +5,13 @@
   "description": "Type safe Testing Library",
   "author": "kazeusagi",
   "license": "MIT",
-  "homepage": "https://github.com/kazeusagi/tabi#readme",
+  "homepage": "https://github.com/kazeusagi/tabiji#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kazeusagi/tabi.git"
+    "url": "git+https://github.com/kazeusagi/tabiji.git"
   },
   "bugs": {
-    "url": "https://github.com/kazeusagi/tabi/issues"
+    "url": "https://github.com/kazeusagi/tabiji/issues"
   },
   "exports": {
     ".": "./dist/index.mjs",
