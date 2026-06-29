@@ -1,9 +1,9 @@
 import * as bun from 'bun:test';
 import { Tabiji } from '../dist/index.mjs';
 
-type MyEnv = { count: number };
+type MyContext = { count: number };
 
-new Tabiji<MyEnv>(bun)
+new Tabiji<MyContext>(bun)
   .beforeAll((c) => {
     c.set('count', 10);
   })

@@ -1,9 +1,9 @@
 import * as vitest from 'vitest';
 import { Tabiji } from '../dist/index.mjs';
 
-type MyEnv = { count: number };
+type MyContext = { count: number };
 
-new Tabiji<MyEnv>(vitest)
+new Tabiji<MyContext>(vitest)
   .beforeAll((c) => {
     c.set('count', 10);
   })
