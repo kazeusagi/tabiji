@@ -1,2 +1,2 @@
-![bun-test](https://github.com/USER/REPO/actions/workflows/CI.yml/badge.svg?job=bun-test)
-![vitest](https://github.com/USER/REPO/actions/workflows/CI.yml/badge.svg?job=vitest)
+![bun-test](https://github.com/kazeusagi/tabiji/actions/workflows/ci.yml/badge.svg?job=bun-test)
+![vitest](https://github.com/kazeusagi/tabiji/actions/workflows/ci.yml/badge.svg?job=vitest)
