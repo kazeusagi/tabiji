@@ -1,10 +1,10 @@
 # Tabiji
 
-![bun](https://github.com/kazeusagi/tabiji/actions/workflows/bun.yml/badge.svg)
-![vitest](https://github.com/kazeusagi/tabiji/actions/workflows/vitest.yml/badge.svg)
+[![vitest](https://github.com/kazeusagi/tabiji/actions/workflows/vitest.yml/badge.svg)](https://github.com/kazeusagi/tabiji/actions/workflows/vitest.yml)
+[![buntest](https://github.com/kazeusagi/tabiji/actions/workflows/bun.yml/badge.svg)](https://github.com/kazeusagi/tabiji/actions/workflows/bun.yml)
 [![npm](https://img.shields.io/npm/v/tabiji)](https://www.npmjs.com/package/tabiji)
 [![size](https://img.shields.io/bundlephobia/min/tabiji)](https://www.npmjs.com/package/tabiji)
-[![size](https://img.shields.io/bundlephobia/minzip/tabiji)](https://www.npmjs.com/package/tabiji)
+[![zpisize](https://img.shields.io/bundlephobia/minzip/tabiji)](https://www.npmjs.com/package/tabiji)
 [![downloads](https://img.shields.io/npm/dm/tabiji)](https://www.npmjs.com/package/tabiji)
 
 ## 既存のテストランナーを薄くラップし、Honoライクなメソッドチェーン形式でテストを書けるようにするライブラリです。
