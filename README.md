@@ -1,2 +1,6 @@
 ![bun](https://github.com/kazeusagi/tabiji/actions/workflows/bun.yml/badge.svg)
 ![vitest](https://github.com/kazeusagi/tabiji/actions/workflows/vitest.yml/badge.svg)
+![npm](https://img.shields.io/npm/v/tabiji)
+![size](https://img.shields.io/bundlephobia/min/tabiji)
+![size](https://img.shields.io/bundlephobia/minzip/tabiji)
+![downloads](https://img.shields.io/npm/dm/tabiji)
