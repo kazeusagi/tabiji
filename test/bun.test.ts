@@ -1,18 +1,18 @@
 import * as bun from 'bun:test';
 import { Tabiji } from '../dist/index.mjs';
 
-type MyContext = { count: number };
+type MyInventory = { money: number };
 
-new Tabiji<MyContext>(bun)
+new Tabiji<MyInventory>(bun)
   .beforeAll((c) => {
-    c.set('count', 10);
+    c.set('money', 300);
   })
   .beforeEach((c) => {
     c.set('count', (prev) => prev + 1);
   })
   .describe('aa', ({ it }) => {
-    it('case 1', (c) => {
-      console.log(c.get('count'));
+    it('case 1', (c, { expect }) => {
+      expect(c.get("money")).
     });
     it('case 2', (c) => {
       console.log(c.get('count'));

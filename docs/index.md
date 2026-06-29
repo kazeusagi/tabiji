@@ -3,23 +3,22 @@
 layout: home
 
 hero:
-  name: "Tabiji - Honoライクに書ける型安全なテストラッパー"
-  text: "これから書く"
-  tagline: My great project tagline
+  name: "Tabiji"
+  text: "Honoライクに型安全なテストが書ける"
+  tagline: 軽量・ゼロ依存・Vitest / Bun Test に対応
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: はじめる
+      link: /get-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Github
+      link: https://github.com/kazeusagi/tabiji
 
 features:
-  - title: Feature A
+  - title: 型安全
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
