@@ -1,28 +1,14 @@
-import * as bun from 'bun:test';
-import { Tabiji } from '../dist/index.mjs';
+import { Tabiji } from 'tabiji';
+import * as runner from 'bun:test';
 
-type MyInventory = { money: number };
+type MyContext = { message: string };
 
-new Tabiji<MyInventory>(bun)
-  .beforeAll((c) => {
-    c.set('money', 300);
+new Tabiji<MyContext>(runner)
+  .beforeAll((c) => c.set('message', 'start'))
+  .describe('context', ({ it }) => {
+    it('message', (c, { expect }) => expect(c.get('message')).toBe('start'));
   })
-  .beforeEach((c) => {
-    c.set('count', (prev) => prev + 1);
-  })
-  .describe('aa', ({ it }) => {
-    it('case 1', (c, { expect }) => {
-      expect(c.get("money")).
-    });
-    it('case 2', (c) => {
-      console.log(c.get('count'));
-    });
-  })
-  .describe('iiu', ({ it }) => {
-    it('case 3', (c) => {
-      console.log(c.get('count'));
-    });
-    it('case 4', (c) => {
-      console.log(c.get('count'));
-    });
+  .describe('calc', ({ it }) => {
+    it('add', (_c, { expect }) => expect(1 + 1).toBe(2));
+    it('sub', (_c, { expect }) => expect(1 - 1).toBe(0));
   });

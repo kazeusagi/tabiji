@@ -37,7 +37,9 @@
       "source": {
         "organizeImports": {
           "level": "on",
-          "options": {}
+          "options": {
+            "groups": ["tabiji"]
+          }
         }
       }
     }

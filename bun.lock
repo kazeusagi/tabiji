@@ -10,6 +10,7 @@
         "@types/node": "^25.6.2",
         "@typescript/native-preview": "7.0.0-dev.20260509.2",
         "bumpp": "^11.1.0",
+        "tabiji": "^0.0.3",
         "tsdown": "^0.22.0",
         "typescript": "^6.0.3",
         "vitepress": "^2.0.0-alpha.17",
@@ -495,6 +496,8 @@
     "stringify-entities": ["stringify-entities@4.0.4", "", { "dependencies": { "character-entities-html4": "^2.0.0", "character-entities-legacy": "^3.0.0" } }, "sha512-IwfBptatlO+QCJUo19AqvrPNqlVMpW9YEL2LIVY+Rpv2qsjCGxaDLNRgeGsQWJhfItebuJhsGSLjaBbNSQ+ieg=="],
 
     "tabbable": ["tabbable@6.5.0", "", {}, "sha512-wieBHXygIm7OyQOu5hQlkk62/WyCFYGlWg7L6/ZCUZwx0o398Zkn4pVmMyfYhfMG8kGrj/Krt8eIk6UKC6VzwA=="],
+
+    "tabiji": ["tabiji@0.0.3", "", {}, "sha512-7G/8uM5+tiNrWZPz41jDxxApWk6LQhJWDny/OCeu/YhY8BaV8CMHJvNmDoDbnWEFhDae8Yu+hyU60Mcrl6HABw=="],
 
     "tinybench": ["tinybench@2.9.0", "", {}, "sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg=="],
 
