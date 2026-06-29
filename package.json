@@ -1,7 +1,7 @@
 {
   "name": "tabiji",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Type safe Testing Library",
   "author": "kazeusagi",
   "license": "MIT",
