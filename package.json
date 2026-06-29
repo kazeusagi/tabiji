@@ -1,5 +1,5 @@
 {
-  "name": "tabi",
+  "name": "tabiji",
   "type": "module",
   "version": "0.0.1",
   "description": "Type safe Testing Library",
@@ -27,7 +27,7 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "release": "bumpp",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "bun run build"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.1",

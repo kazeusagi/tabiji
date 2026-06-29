@@ -1,23 +1,28 @@
 import * as vitest from 'vitest';
-import { Tabi } from '../dist/index.mjs';
+import { Tabiji } from '../dist/index.mjs';
 
-type MyEnv = { userId: number; userName: string };
+type MyEnv = { count: number };
 
-new Tabi<MyEnv>(vitest)
+new Tabiji<MyEnv>(vitest)
+  .beforeAll((c) => {
+    c.set('count', 10);
+  })
   .beforeEach((c) => {
-    console.log('beforeEach');
+    c.set('count', (prev) => prev + 1);
   })
   .describe('aa', ({ it }) => {
     it('case 1', (c) => {
-      console.log(c.get('userId'));
+      console.log(c.get('count'));
     });
-    it('case 2', () => {});
+    it('case 1', (c) => {
+      console.log(c.get('count'));
+    });
   })
   .describe('iiu', ({ it }) => {
-    it('case 3', () => {});
-    it('case 4', () => {});
-  })
-  .myfn((c) => {
-    c.set('userId', 12);
-    console.log(c.get('userId'));
+    it('case 1', (c) => {
+      console.log(c.get('count'));
+    });
+    it('case 1', (c) => {
+      console.log(c.get('count'));
+    });
   });
